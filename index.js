@@ -21,17 +21,17 @@ $("td").click(function(e) {
 	console.log(that);
 	console.log(e);
 	$(".white-border").animate({
-		width:'85%',
-		height:'85%',
-		top:'7.5%',
-		left:'7.5%',
+		width:'95%',
+		height:'95%',
+		top:'2.5%',
+		left:'2.5%',
 		
 	},100);
 	$(".white-border").animate({
-		width:'80%',
-		height:'80%',
-		top:'10%',
-		left:'10%',
+		width:'90%',
+		height:'90%',
+		top:'5%',
+		left:'5%',
 	},100)
 	$(".page").animate({
 		top:'-=91.5%',
