@@ -20,6 +20,7 @@ $(window).resize(function(){
 $(".button").click(function(){
 	$(".index").fadeOut()
 	$(".question").fadeIn()
+	$(".white-border").fadeOut();
 })
 $("td").click(function(e) {
 	flag ++
