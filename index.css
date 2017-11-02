@@ -1,3 +1,14 @@
+@font-face {
+  font-family: '迷你简卡通';
+  src: url('./font/mini_cartoon.eot');
+  src:
+    url('./font/mini_cartoon.eot?#font-spider') format('embedded-opentype'),
+    url('./font/mini_cartoon.woff') format('woff'),
+    url('./font/mini_cartoon.ttf') format('truetype'),
+    url('./font/mini_cartoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 *{
 	font-family: '迷你简卡通';
 	color:#111111;
@@ -182,6 +193,16 @@ td:hover{
 }
 
 @keyframes Rotate{
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(180deg);}
+	100%{transform: rotate(360deg);}
+}
+@-webkit-keyframes Rotate{
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(180deg);}
+	100%{transform: rotate(360deg);}
+}
+@-o-keyframes Rotate{
 	0%{transform: rotate(0deg);}
 	50%{transform: rotate(180deg);}
 	100%{transform: rotate(360deg);}
