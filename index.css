@@ -10,7 +10,55 @@ html,body{
 	width: 100%;
 	background-color:#cc3333;
 }
+.index{
+	height: 100%;
+	padding: 50px;
+	box-sizing: border-box;
+}
+.index>p{
+	text-align: center;
+	padding:10% 0;
+	font-size: 1.5em;
+	color:white;
+}
+p:nth-child(2){
+	font-size: 50px;
+	text-indent: 0.5em;
+}
+.button{
+	color:#fff;
+	padding: 10px 5px;
+	display: inline-block;
+	text-align: center;
+	width: 80px;
+	margin: 0 auto;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom:100px;
+	border:double;
+
+}
+.tmail{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+
+}
+.JD{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+
+}
 .question{
+	display: none;
 	position: relative;
 	height: 454px;
 	top:10%;
@@ -33,43 +81,93 @@ html,body{
 }
 .page{
 	/*position: absolute;*/
-	top:40.8px;
+	/*top:40.8px;*/
 	list-style:none;
 	background-color: #cccccc;
 	position: relative;
 	margin:0 auto;
-	margin-bottom: 48px;
+	/*margin-bottom: 48px;*/
 	width: 100%;
-	height: 326px;
+	height: 408px;
 	
 	text-align: center;
 }
 table{
+	height: 212px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	top: 0px;
 	display: block;
 	width: 80%;
-	margin:0 auto;
+	margin:auto auto;
 }
 form>p{
-	padding: 20px 0 20px;
+	font-size: 1.4em;
+	padding: 39px 0 39px;
 }
 td{
-
 	font-size: 1em;
 	width: 300px;
 	text-align: left;
 	height: 50px;
 }
+.music{
+	line-height: 66.6px;
+}
+.music>tbody>tr>td{
+	
+	text-align: center;
+}
+td:hover{
+	background-image: url(./img/bingo.png);
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	
+}
+#sixth>p{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	right: 0px;
+	bottom: 0px;
+	margin:auto;
+}
+.loading{
+	height: 50px;
+	width: 100px;
+	padding: 50px 25px;
+	border:double 2px #fff;
+	border-radius: 50%;
+	margin: auto;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	top:0px;
+	-webkit-animation: Rotate 5s  infinite linear;
+	-o-animation: Rotate 5s  infinite linear;
+	animation: Rotate 5s infinite linear;
+
+}
+#comment{
+	line-height: 408px;
+}
 .white-border{
-	z-index: 0;
+	z-index: -1;
 	transform: scale(1);
 	position: absolute;
 	height: 80%;
 	top:10%;
 	left:10%;
 	width: 80%;
-	border: 2px solid #fff;
+	/*border: 2px solid #fff;*/
 	margin:  0 auto;
 }
+
 @media screen and (max-width:350px){
 	td{
 		font-size: 0.8em;
@@ -77,6 +175,15 @@ td{
 		text-align: left;
 		height: 50px;
 	}
+	form>p{
+	font-size: 1.2em;
+	padding: 32px 0 32px;
+}
+
+@keyframes Rotate{
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(180deg);}
+	100%{transform: rotate(360deg);}
 }
 /*.page:nth-child(2)
 {

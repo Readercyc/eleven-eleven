@@ -10,13 +10,20 @@ var height = parseInt($(".white-border").css('height'))
 console.log(height);
 var page_top = (height-408)/2;
 console.log(page_top);
+var flag=0;
 $("#test").css("top",page_top);
 $(window).resize(function(){
 	var height = parseInt($(".white-border").css('height'))
 	var page_top = (height-408)/2;
 	$("#test").css("top",page_top);
 })
+$(".button").click(function(){
+	$(".index").fadeOut()
+	$(".question").fadeIn()
+})
 $("td").click(function(e) {
+	flag ++
+	console.log(flag)
 	var that = $(this);
 	console.log(that);
 	console.log(e);
@@ -34,6 +41,18 @@ $("td").click(function(e) {
 		left:'10%',
 	},100)
 	$(".page").animate({
-		top:'-=91.5%',
+		top:'-=100%',
 	},500);
+	if(flag==5)
+	{
+		$(".page").animate({
+		top:'-=1%',
+		},3000);
+		$(".page").animate({
+		top:'-=99%',
+		},500);
+	}
+
 })
+
+
