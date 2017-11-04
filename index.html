@@ -10,13 +10,16 @@
 <link href="index.css " rel="stylesheet">
 </head>
 	<body>
+
 		<div class="tmail">这里有只猫</div>
 		<div class="JD">这里有只狗</div>
 		<div class="index">
-			<p>测测双十一<br/>你和谁更配</p>
+			<p>测测"双十一"<br/>你和"谁"更配</p>
 			<p>？</p>
-			<div class="button">开始配对!</div>
+			<p>购物车里的宝贝总是有很多，可到底哪些和你的气质更搭呢？测一测你的双十一必买清单里，到底该有些什么吧！</p>
 
+			<div class="button">开始配对!</div>
+		
 		</div>
 	    <div class="question">
 			<ul id="test">
@@ -25,7 +28,7 @@
 						<p>你觉得你是</p>
 						<table>
 							<tr>
-								<td>A.男神</td>
+								<td >A.男神</td>
 								
 							</tr>
 							<tr>
@@ -48,19 +51,19 @@
 							<table>
 							
 								<tr>
-									<td>A.单身喵</td>
+									<td data-select="A">A.单身喵</td>
 									
 								</tr>
 								<tr>
-									<td>B.热恋ing</td>
+									<td data-select="B">B.热恋ing</td>
 									
 									
 								</tr>
 								<tr>
-									<td>C.追逐爱情的二狗子</td>
+									<td data-select="C">C.追逐爱情的二狗子</td>
 								</tr>
 								<tr>
-									<td>D.看破红尘的得道中人</td>
+									<td data-select="D">D.看破红尘的得道中人</td>
 								</tr>
 							</table>
 					</form>
@@ -84,6 +87,9 @@
 								</tr>
 								<tr>
 									<td>D.玄学</td>
+								</tr>
+								<tr>
+									<td>E.其他</td>
 								</tr>
 							</table>
 					</form>
@@ -134,7 +140,10 @@
 				<div class="page" id="analyze">		
 					<div class="loading">湘大二手菌<br/>正在为你分析</div>
 				</div>
-				<div class="page" id="comment">二初实在是太帅了</div>
+				<div class="page" id="comment">
+					<div id="product"></div>
+					<div id="why"></div>
+				</div>
 			</ul>
 	    </div>
 	    <div class="white-border"></div>
