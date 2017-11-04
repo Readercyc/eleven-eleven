@@ -64,9 +64,9 @@ $("td").click(function(e) {
 		$(".page").animate({
 		top:'-=100%',
 		},500);
-		console.log(product[answer])
-		$("#product").html(product[answer]);
-		$("#why").html(comment[answer]);
+		console.log(product[result])
+		$("#product").html(product[result]);
+		$("#why").html(comment[result]);
 	}
 
 })
@@ -76,6 +76,7 @@ $("td").click(function(e) {
 //测评开始
 var product = new Array();
 var answer;
+var result;
 //测评内容
 product[1] = "防脱发洗发水<br/>Kindle<br/>风油精<br/>极简风文具"
 product[2] = "创意星空投影灯<br/>包子充电暖手宝<br/>亚克力变色杯<br/>趣蛋加湿器"
@@ -84,7 +85,7 @@ product[4] = "空心龙凤手工雪花足银筷<br/>野外露营帐篷<br/>富�
 product[5] = "可爱动物连体睡衣<br/>暖手捂<br/>USB充电暖手宝<br/>鞋面防水喷雾剂"
 product[6] = "木质拼图<br/>立体手工<br/>制作模型鲁班<br/>锁九连环"
 product[7] = "迷你手机麦克风<br/>电动平衡车<br/>烹饪小锅<br/>瑜伽垫"
-product[8] = "网易春风系列情趣用品，五星级酒店套房房卡<br/>Jo Malone蜡烛<br/>82年拉菲"
+product[8] = "网易春风系列情趣用品<br/>五星级酒店套房房卡<br/>Jo Malone蜡烛<br/>82年拉菲"
 product[9] = "cherry机械键盘<br/>罗技竞技耳机<br/>雷蛇电竞鼠标<br/>Surfacebook2"
 product[0] = "Oral-B电动牙刷<br/>小米AI音响<br/>华为体脂秤<br/>自能扫地机"
 
@@ -107,127 +108,148 @@ function judge(e){
 		case "AA":
 			var math = new Array(1,2,8);
 			answer =  rnd(0,2)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "AB":
 			var math = new Array(4,7,10);
 			answer =  rnd(0,2)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "AC":
 			var math = new Array(3,5,6,8);
 			answer =  rnd(0,3)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "AD":
 			var math = new Array(4,5,7);
 			answer =  rnd(0,2)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "AE":
 			var math = new Array(1,2,3,4,5,6,7,8);
 			answer =  rnd(0,7)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "BA":
 			var math = new Array(1,3,8,9);
 			answer =  rnd(0,3)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "BB":
 			var math = new Array(4,9,10);
 			answer =  rnd(0,2)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "BC":
 			var math = new Array(3,6,8,9);
 			answer =  rnd(0,3)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "BD":
 			var math = new Array(4,9);
 			answer =  rnd(0,1)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "BE":
 			var math = new Array(3,9);
 			answer =  rnd(0,1)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "CA":
 			var math = new Array(1,4,8,9);
 			answer =  rnd(0,3)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "CB":
 			var math = new Array(4,9,10);
 			answer =  rnd(0,2)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "CC":
 			var math = new Array(3,6,8,9);
 			answer =  rnd(0,3)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "CD":
 			var math = new Array(4,5,9);
 			answer =  rnd(0,2)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "CE":
 			var math = new Array(6,9);
 			answer =  rnd(0,1)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "DA":
 			var math = new Array(1,2);
 			answer =  rnd(0,1)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "DB":
 			var math = new Array(4,10);
 			answer =  rnd(0,1)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "DC":
 			var math = new Array(6,7);
 			answer =  rnd(0,1)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "DD":
 			var math = new Array(4,7);
 			answer =  rnd(0,1)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		case "DE":
 			var math = new Array(1,2,4,5,6,7);
 			answer =  rnd(0,5)
+			result = math[answer];
 			console.log(answer);
 			console.log(math[answer]);
 			break;
 		default:
-			answer = 1;
+			result = 1;
 
 	}
+	console.log(result);
 }
 
  function rnd(n, m){
