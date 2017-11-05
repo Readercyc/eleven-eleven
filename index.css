@@ -265,8 +265,8 @@ html,body{
 	z-index: 2;
 
 }
-button{
-	color:orange;
+.button:hover{
+	color:#000;
 }
 /*主页结束*/
 .sky{
