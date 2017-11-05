@@ -10,15 +10,30 @@
 <link href="index.css " rel="stylesheet">
 </head>
 	<body>
-
-		<div class="tmail">这里有只猫</div>
-		<div class="JD">这里有只狗</div>
+		<div class="sky">31.sky</div>
 		<div class="index">
-			<p>测测"双十一"<br/>你和"谁"更配</p>
-			<p>？</p>
-			<p>购物车里的宝贝总是有很多，可到底哪些和你的气质更搭呢？测一测你的双十一必买清单里，到底该有些什么吧！</p>
 
-			<div class="button">开始配对!</div>
+			<p class="dog_word">
+				<span>双</span><span>十</span><span>一</span><br/>
+				<span>你</span><span>和</span><span>谁</span><br/>
+				<span>更</span><br/>
+				<span>配</span>
+			</p>
+			<p class="cat_word">
+				<span>双</span><span>十</span><span>一</span><br/>
+				<span>你</span><span>和</span><span>谁</span><br/>
+				<span>更</span><br/>
+				<span>配</span>
+			</p>
+			<!--<p>？</p>
+			<p>购物车里的宝贝总是有很多，可到底哪些和你的气质更搭呢？测一测你的双十一必买清单里，到底该有些什么吧！</p>-->
+			<div class="dog">
+				<img src="./img/dog.png" style="width:100%">
+			</div>
+			<div class="cat">
+				<img src="./img/cat.png" style="width:100%">
+			</div>
+			<div class="button">开始测试!</div>
 		
 		</div>
 	    <div class="question">
@@ -26,21 +41,21 @@
 				<div class="page" id="first">
 					<form>
 						<p>你觉得你是</p>
-						<table>
+						<table cellpadding="2px;">
 							<tr>
-								<td >A.男神</td>
+								<td >A男神</td>
 								
 							</tr>
 							<tr>
-								<td>B.女神</td>
+								<td>B女神</td>
 								
 								
 							</tr>
 							<tr>
-								<td>C.女装大佬</td>
+								<td>C女装大佬</td>
 							</tr>
 							<tr>
-								<td>D.异次元生物</td>
+								<td>D异次元生物</td>
 							</tr>
 						</table>
 					</form>
@@ -48,7 +63,7 @@
 				<div class="page" id="second">
 					<form>
 						<p>你目前的感情状况是</p>
-							<table>
+							<table cellpadding="2px;">
 							
 								<tr>
 									<td data-select="A">A.单身喵</td>
@@ -71,7 +86,7 @@
 				<div class="page" id="third">
 					<form>
 						<p>你的兴趣爱好是</p>
-							<table>
+							<table cellpadding="2px;">
 							
 								<tr>
 									<td>A.科技</td>
@@ -97,7 +112,7 @@
 				<div class="page" id="fourth">
 					<form>
 						<p>以下食物哪种你最喜欢</p>
-							<table>
+							<table cellpadding="2px;">
 							
 								<tr>
 									<td>A.重庆火锅</td>
@@ -137,14 +152,20 @@
 							</table>
 					</form>
 				</div>
-				<div class="page" id="analyze">		
+				<!--<div class="page" id="analyze">		
 					<div class="loading">湘大二手菌<br/>正在为你分析</div>
-				</div>
+				</div>-->
 				<div class="page" id="comment">
 					<div id="product"></div>
 					<div id="why"></div>
 				</div>
 			</ul>
+	    </div>
+	    <div class="loading">
+			<div class="left"></div>
+			<div class="right"></div>
+			<div class="loading_circle"><span>二<br/>手<br/>街</span></div>
+			<div class="loading_bar">...努力分析中...</div>
 	    </div>
 	    <div class="white-border"></div>
 	  <script type="text/javascript" src="jquery.js"></script>

@@ -12,13 +12,15 @@ var page_top = (height-408)/2;
 console.log(page_top);
 var flag=0;
 var judge_string = "";
-$("#test").css("top",page_top);
-$(window).resize(function(){
+/*$("#test").css("top",page_top);*/
+/*$(window).resize(function(){
 	var height = parseInt($(".white-border").css('height'))
 	var page_top = (height-408)/2;
 	$("#test").css("top",page_top);
-})
+})*/
 $(".button").click(function(){
+	clearInterval(int);
+	$(".sky").css("z-index","1");
 	$(".index").hide()
 	$(".question").fadeIn()
 	$(".white-border").fadeIn()
@@ -39,34 +41,34 @@ $("td").click(function(e) {
 		console.log(judge_string);
 		judge(judge_string);
 	}
-
+	$("#test").css("z-index",0);
 	$(".white-border").animate({
 		width:'85%',
 		height:'85%',
-		top:'7.5%',
+		top:'12.5%',
 		left:'7.5%',
 		
 	},100);
 	$(".white-border").animate({
 		width:'80%',
 		height:'80%',
-		top:'10%',
+		top:'15%',
 		left:'10%',
 	},100)
 	$(".page").animate({
 		top:'-=100%',
+
 	},500);
+	$("#test").css("z-index",2);
 	if(flag==5)
 	{
-		$(".page").animate({
-		top:'-=0%',
-		},3000);
-		$(".page").animate({
-		top:'-=100%',
-		},500);
-		console.log(product[result])
-		$("#product").html(product[result]);
-		$("#why").html(comment[result]);
+		
+		$(".question").hide();
+		$(".white-border").hide();
+		$(".loading").fadeIn()
+		console.log(product[result-1])
+		$("#product").html(product[result-1]);
+		$("#why").html(comment[result-1]);
 	}
 
 })
@@ -258,3 +260,38 @@ function judge(e){
     }
 
 //测评渲染
+
+var time=0;
+if(time%2==0)
+	{
+		$("html").css("background-color","#8d99ad")
+		$("body").css("background-color","#8d99ad")
+		$(".left").css("background-color","#838ea4")
+		$(".right").css("background-color","#7f8ca0")
+	}
+	else
+	{
+		$("html").css("background-color","#464440")
+		$("body").css("background-color","#464440")
+		$(".left").css("background-color","#4a4a4a")
+		$(".right").css("background-color","#4d4d4d")
+	}
+var int = self.setInterval("get_color()",5000)
+function get_color(){
+	time++;
+	console.log(time);
+	if(time%2==0)
+	{
+		$("html").css("background-color","#8d99ad")
+		$("body").css("background-color","#8d99ad")
+		$(".left").css("background-color","#838ea4")
+		$(".right").css("background-color","#7f8ca0")
+	}
+	else
+	{
+		$("html").css("background-color","#464440")
+		$("body").css("background-color","#464440")
+		$(".left").css("background-color","#4a4a4a")
+		$(".right").css("background-color","#4d4d4d")
+	}
+}
