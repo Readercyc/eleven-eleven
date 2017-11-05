@@ -52,6 +52,19 @@ html,body{
 	}
 	
 }
+@-webkit-keyframes index_bg_change{
+	0%{
+		background-image: url(./img/dog_bg.jpg);
+	}
+	50%{
+		background-image: url(./img/cat_bg.jpg);
+	}
+	100%{
+		background-image: url(./img/dog_bg.jpg);
+	}
+	
+}
+
 .index>p{
 	text-align: center;
 	padding:5% 0;
@@ -134,6 +147,17 @@ html,body{
 	}
 }
 
+@-webkit-keyframes dog_change{
+	0%{
+		transform: rotateY(0deg);
+	}
+	50%{
+		transform: rotateY(180deg);
+	}
+	100%{
+		transform: rotateY(360deg);
+	}
+}
 
 @media screen and (min-width:900px){
 	.index{
@@ -201,6 +225,17 @@ html,body{
 
 }
 @keyframes cat_change{
+	0%{
+		transform: rotateY(-180deg);
+	}
+	50%{
+		transform: rotateY(0deg);
+	}
+	100%{
+		transform: rotateY(180deg);
+	}
+}
+@-webkit-keyframes cat_change{
 	0%{
 		transform: rotateY(-180deg);
 	}
@@ -504,7 +539,39 @@ td:hover{
 	}
 
 }
+@-webkit-keyframes move{
+	0%{
+		transform: translateX(-2%);
+	}
+	20%{
+		transform: translateY(2%);
+	}
+	40%{
+		transform: translateY(-2%);
+	}
+	60%{
+		transform: translateX(-2%);
+	}
+	80%{
+		transform: translateX(2%);
+	}
+	100%{
+		transform: translateY(-5%);
+	}
+
+}
 @keyframes loading_change{
+	0%{
+		transform: rotateY(-180deg);
+	}
+	50%{
+		transform: rotateY(0deg);
+	}
+	100%{
+		transform: rotateY(180deg);
+	}
+}
+@-webkit-keyframes loading_change{
 	0%{
 		transform: rotateY(-180deg);
 	}
