@@ -265,8 +265,8 @@ html,body{
 	z-index: 2;
 
 }
-.button:hover{
-	color:#000;
+button{
+	color:orange;
 }
 /*主页结束*/
 .sky{
@@ -353,10 +353,10 @@ form>p{
 td{
 	background-color: #f9f7d1;
 	text-align: center;
-	width:1920px;
-	padding:15px 0;
 	font-size: 1em;
-	margin:10px 0;
+	padding:20px 0;
+	width:1920px;
+	margin:15px 0;
 }
 td:fisrt-letter{
 	text-indent: 2em;
@@ -416,7 +416,7 @@ td:hover{
 		font-size: 0.8em;
 		width: 300px;
 		text-align: center;
-		height: 50px;
+
 	}
 	form>p{
 	font-size: 1.2em;
@@ -473,7 +473,7 @@ td:hover{
 	margin: auto;
 	left: 0px;
 	right: 0px;
-	top:15%;
+	top:25%;
 	background-image: url(./img/color.png),url(./img/loading.png);
 	-webkit-background-size: 100% 50%,contain;
 	background-size: 100 50%,contain;
@@ -505,7 +505,7 @@ td:hover{
 	width: 300px;
 	padding: 10px 0;
 	color: #fff;
-	bottom: 15%;
+	bottom: 20%;
 	left: 0px;
 	right: 0px;
 	margin:0 auto;
