@@ -492,21 +492,18 @@ td:hover{
 }
 .maincontent{
 	position: absolute;
-	top: 0px;
-	right: 0px;
 	left: 0px;
-	bottom: 0px;
-	margin: auto auto;
-	padding-top: 15px;
+	right: 0px;
+	margin: 15px auto 0;
 	padding-bottom: 15px;
 	width: 100%;
 	height: 460px;
-	font-size: 24px;
+	font-size: 20px;
 	text-align: center;
 	line-height: 30px;
 }
 #product,#why{
-	font-size: 20px;
+	font-size: 16px;
 	padding: 20px 20px 0 20px;
 
 }
@@ -641,6 +638,14 @@ td:hover{
 	-o-animation: move 0.5s infinite linear;
 	animation: move 0.5s infinite linear;
 }
+#erweima{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	height: 50px;
+	width: 50px;
+	border: 1px red solid;
+}
 @keyframes move{
 	0%{
 		transform: translateX(-2%);
@@ -704,6 +709,43 @@ td:hover{
 	100%{
 		transform: rotateY(180deg);
 	}
+}
+a{
+	color:#cc3333;
+	display: inline-block;
+	text-decoration: none;
+	-webkit-animation: Scale 4s infinite linear;
+	-moz-animation: Scale 4s infinite linear;
+	-ms-animation: Scale 4s infinite linear;
+	-o-animation: Scale 4s infinite linear;
+	animation: Scale 4s infinite linear;
+	
+}
+#erweima:before{
+	content:"二维码";
+}
+@keyframes Scale{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+@-webkit-keyframes Scale{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
+	}
+
 }
 /*.page:nth-child(2)
 {
