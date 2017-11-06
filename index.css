@@ -337,7 +337,6 @@ table{
 	background-position: 50% 0%;
 	-webkit-background-size: 15%;
 	background-size: 15%;
-	height: 212px;
 	position: absolute;
 	left: 0px;
 	right: 0px;
@@ -355,8 +354,6 @@ td{
 	background-color: #f9f7d1;
 	text-align: center;
 	font-size: 1em;
-	width:1920px;
-	height: 45px;
 	margin:10px 0;
 }
 td:fisrt-letter{
