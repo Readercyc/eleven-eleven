@@ -14,6 +14,7 @@ var images = [
     './img/dog_ask.png',
     './img/dog_bg.jpg',
     './img/dq.png',
+    './img/analyze.png',
     './img/loading.png',
     './img/tmail.png',
 ]
@@ -36,7 +37,8 @@ function ShowProgress(progress) {
     if(progress == 100)
     {
        
-    	/*$('.loading_value').text("前往打斗现场！");*/
+    	$('.loading_value').text("前往打斗现场！");
+    	
     	$('.preload').fadeOut();
     }
 }
