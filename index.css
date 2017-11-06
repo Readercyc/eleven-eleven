@@ -32,11 +32,11 @@ html,body{
 	max-width: 600px;
 	margin:0 auto;
 	background-image: url(./img/dog_bg.jpg);
-	-webkit-animation: index_bg_change 10s cubic-bezier(0, 1, 0, 1) infinite   ;
-	-moz-animation: index_bg_change 10s cubic-bezier(0, 1, 0, 1) infinite   ;
-	-ms-animation: index_bg_change 10s cubic-bezier(0, 1, 0, 1) infinite ;
-	-o-animation: index_bg_change 10s cubic-bezier(0, 1, 0, 1) infinite ;
-	animation: index_bg_change 10s cubic-bezier(0, 1, 0, 1) infinite  ;	
+	-webkit-animation: index_bg_change 4s cubic-bezier(0, 1, 0, 1) infinite   ;
+	-moz-animation: index_bg_change 4s cubic-bezier(0, 1, 0, 1) infinite   ;
+	-ms-animation: index_bg_change 4s cubic-bezier(0, 1, 0, 1) infinite ;
+	-o-animation: index_bg_change 4s cubic-bezier(0, 1, 0, 1) infinite ;
+	animation: index_bg_change 4s cubic-bezier(0, 1, 0, 1) infinite  ;	
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
 	height: 100%;
@@ -91,11 +91,11 @@ html,body{
 	font-size: 1.2em;
 	perspective-origin: 50% 50%;
 	transform: rotateY(0deg);
-	-webkit-animation: dog_change 10s cubic-bezier(0,1,0,1) infinite;
-	-moz-animation: dog_change 10s cubic-bezier(0,1,0,1) infinite;
-	-ms-animation: dog_change 10s cubic-bezier(0,1,0,1) infinite;
-	-o-animation: dog_change 10s cubic-bezier(0,1,0,1) infinite;
-	animation: dog_change 10s cubic-bezier(0,1,0,1) infinite;
+	-webkit-animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
+	-moz-animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
+	-ms-animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
+	-o-animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
+	animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
 	backface-visibility: hidden;
 }
 .dog_word>span{
@@ -128,11 +128,11 @@ html,body{
 .dog>img{
 	perspective-origin: 50% 50%;
 	transform: rotateY(0deg);
-	-webkit-animation: dog_change 10s cubic-bezier(0,1,0,1) infinite;
-	-moz-animation: dog_change 10s cubic-bezier(0,1,0,1) infinite;
-	-ms-animation: dog_change 10s cubic-bezier(0,1,0,1) infinite;
-	-o-animation: dog_change 10s cubic-bezier(0,1,0,1) infinite;
-	animation: dog_change 10s cubic-bezier(0,1,0,1) infinite;
+	-webkit-animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
+	-moz-animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
+	-ms-animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
+	-o-animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
+	animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
 	backface-visibility: hidden;
 	
 	
@@ -194,11 +194,11 @@ html,body{
 .cat_word{
 	perspective-origin: 50% 50%;
 	transform: rotateY(180deg);
-	-webkit-animation: cat_change 10s cubic-bezier(0,1,0,1) infinite;
-	-moz-animation: cat_change 10s cubic-bezier(0,1,0,1) infinite;
-	-ms-animation: cat_change 10s cubic-bezier(0,1,0,1) infinite;
-	-o-animation: cat_change 10s cubic-bezier(0,1,0,1) infinite;
-	animation: cat_change 10s cubic-bezier(0,1,0,1) infinite;
+	-webkit-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
+	-moz-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
+	-ms-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
+	-o-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
+	animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
 	backface-visibility: hidden;
 }
 .cat_word>span:nth-child(7)
@@ -219,11 +219,11 @@ html,body{
 .cat>img{
 	perspective-origin: 50% 50%;
 	transform: rotateY(180deg);
-	-webkit-animation: cat_change 10s cubic-bezier(0,1,0,1) infinite;
-	-moz-animation: cat_change 10s cubic-bezier(0,1,0,1) infinite;
-	-ms-animation: cat_change 10s cubic-bezier(0,1,0,1) infinite;
-	-o-animation: cat_change 10s cubic-bezier(0,1,0,1) infinite;
-	animation: cat_change 10s cubic-bezier(0,1,0,1) infinite;
+	-webkit-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
+	-moz-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
+	-ms-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
+	-o-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
+	animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
 	backface-visibility: hidden;
 
 }

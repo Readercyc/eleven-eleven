@@ -304,7 +304,7 @@ if(time%2==0)
 		$(".left").css("background-color","#4a4a4a")
 		$(".right").css("background-color","#4d4d4d")
 	}
-var int = self.setInterval("get_color()",5000)
+var int = self.setInterval("get_color()",2000)
 function get_color(){
 	time++;
 	console.log(time);
