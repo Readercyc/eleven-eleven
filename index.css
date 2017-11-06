@@ -341,7 +341,7 @@ table{
 	position: absolute;
 	left: 0px;
 	right: 0px;
-	bottom: 15%;
+	bottom: 5%;
 	padding-top: 50px;
 	display: block;
 	width: 100%;
@@ -474,7 +474,7 @@ td:hover{
 	margin: auto;
 	left: 0px;
 	right: 0px;
-	top:25%;
+	top:15%;
 	background-image: url(./img/color.png),url(./img/loading.png);
 	-webkit-background-size: 100% 50%,contain;
 	background-size: 100 50%,contain;
@@ -506,7 +506,7 @@ td:hover{
 	width: 300px;
 	padding: 10px 0;
 	color: #fff;
-	bottom: 20%;
+	bottom: 15%;
 	left: 0px;
 	right: 0px;
 	margin:0 auto;
