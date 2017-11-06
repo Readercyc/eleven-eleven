@@ -396,9 +396,9 @@ button{
 .page{
 	background-image: url(./img/tmail.png);
 	background-repeat: no-repeat;
-	background-position: 60% 0%;
-	-webkit-background-size: 70%;
-	background-size: 70%;
+	background-position: 50% 0%;
+	-webkit-background-size: 30%;
+	background-size: 30%;
 	/*position: absolute;*/
 	/*top:40.8px;*/
 	list-style:none;
@@ -413,7 +413,7 @@ button{
 }
 table{
   
-	background-image: url(./img/dq.png);
+	/*background-image: url(./img/dq.png);*/
 	-webkit-background-size: contain;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -423,12 +423,22 @@ table{
 	position: absolute;
 	left: 0px;
 	right: 0px;
-	bottom: 5%;
-	padding-top: 50px;
+	bottom: 12%;
+	/*padding-top: 50px;*/
 	display: block;
 	width: 100%;
 	margin:auto auto;
 
+}
+#third>form>table{
+	bottom: 7%;
+}
+.dq{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin:0 auto;
+	z-index: 999;
 }
 form>p{
 	font-family: '方正稚艺简体';

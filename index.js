@@ -48,24 +48,25 @@ Preload(0)
 /*动效开始*/
 var page = $(".page");
 var height = parseInt($(".white-border").css('height'))
+var dq_top = parseInt($("table").css('top')) - 50;
 console.log(height);
 var page_top = (height-408)/2;
 console.log(page_top);
 var flag=0;
 var judge_string = "";
-/*$("#test").css("top",page_top);*/
-/*$(window).resize(function(){
-	var height = parseInt($(".white-border").css('height'))
-	var page_top = (height-408)/2;
-	$("#test").css("top",page_top);
-})*/
+$(".dq").css("top",dq_top);
+$(window).resize(function(){
+	var dq_top = parseInt($("table").css('top')) - 50;
+	$(".dq").css("top",dq_top);
+})
 $(".button").click(function(){
 	clearInterval(int);
 	$(".sky").css("z-index","1");
 	$(".index").hide()
 	$(".question").fadeIn()
 	$(".white-border").fadeIn()
-
+	var dq_top = parseInt($("table").css('top')) - 50;
+	$(".dq").css("top",dq_top);
 
 })
 $("td").click(function(e) {
