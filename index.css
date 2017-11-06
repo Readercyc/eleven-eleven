@@ -25,6 +25,89 @@ html,body{
 	width: 100%;
 	
 }
+/*预加载*/
+.preload{
+	color:#000;
+	background-color: #8d99ad;
+	z-index: 99;
+	position:absolute;
+	padding: 20% 10%;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
+	-moz-animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
+	-ms-animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
+	-o-animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
+	animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
+	
+}
+.preload>p{
+	padding: 5px 0 0;
+	font-size: 1.2em;
+	-webkit-animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
+	-moz-animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
+	-ms-animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
+	-o-animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
+	animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
+}
+.preload>p:nth-child(2),.preload>p:nth-child(6),.preload>p:nth-child(7)
+{
+	font-size: 1.5em;
+}
+.preload>p>s{
+	-webkit-animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
+	-moz-animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
+	-ms-animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
+	-o-animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
+	animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
+}
+.loading_value{
+	font-family: 'Microsoft Yahei';
+	font-size: 16px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto auto;
+	height: 50px;
+	width: 80%;
+	line-height: 50px;
+	background-image: url(./img/button.jpg);
+	-webkit-background-size: 10% 100%;
+	background-size: 10% 100%;
+	background-repeat:no-repeat;
+	
+}
+@keyframes color_change{
+	0%{
+		background-color: #8d99ad;
+		color:#000;
+	}
+	50%{
+		background-color: #464440;
+		color:#fff;
+	}
+	100%{
+		background-color: #8d99ad;
+		color:#000;
+	}
+}
+@-webkit-keyframes color_change{
+	0%{
+		background-color: #8d99ad;
+	}
+	50%{
+		background-color: #464440;
+	}
+	100%{
+		background-color: #8d99ad;
+	}
+}
+.preload>p{
+	text-align: center;
+}
 /*主页开始* 24-56*/
 .index{
 	font-weight: bold;

@@ -4,7 +4,46 @@
  * @date    2017-10-27 23:42:23
  * @version $Id$
  */
+//预加载
+var images = [
+	'./img/button.jpg',
+    './img/cat.png',
+    './img/dog.png',
+    './img/cat_ask.png',
+    './img/color.png',
+    './img/dog_ask.png',
+    './img/dog_bg.jpg',
+    './img/dq.png',
+    './img/loading.png',
+    './img/tmail.png',
+]
+function Preload(n) {
+    var loadingImg = new Image()
+    loadingImg.src = images[n]
+    loadingImg.onload = function () {
+        n++
 
+        if (n <= images.length) {
+            Preload(n)
+            ShowProgress( n / images.length * 100 )
+            $(".loading_value").css("background-size",n / images.length * 100+"%" + " 100%")
+        }
+    }
+}
+function ShowProgress(progress) {
+
+    $('.loading_value').text("京东，天猫即将抵达二手街...")
+    if(progress == 100)
+    {
+       
+    	/*$('.loading_value').text("前往打斗现场！");*/
+    	$('.preload').fadeOut();
+    }
+}
+Preload(0)
+/*预加载结束*/
+
+/*动效开始*/
 var page = $(".page");
 var height = parseInt($(".white-border").css('height'))
 console.log(height);
@@ -314,6 +353,7 @@ function get_color(){
 		$("body").css("background-color","#8d99ad")
 		$(".left").css("background-color","#838ea4")
 		$(".right").css("background-color","#7f8ca0")
+	
 	}
 	else
 	{
@@ -321,5 +361,6 @@ function get_color(){
 		$("body").css("background-color","#464440")
 		$(".left").css("background-color","#4a4a4a")
 		$(".right").css("background-color","#4d4d4d")
+
 	}
 }
