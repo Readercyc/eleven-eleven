@@ -16,6 +16,9 @@
 	margin: 0px;
 }
 html,body{
+	min-height: 500px;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
 	position: relative;
 	background-color: #93a0b4;
 	height: 100%;
@@ -346,7 +349,7 @@ table{
 	width: 100%;
 	margin:auto auto;
 }
-.page>p{
+form>p{
 	font-size: 1.4em;
 	padding: 25% 0 0;
 }
@@ -391,13 +394,40 @@ td:hover{
 }
 
 #comment{
+	display: none;
+	position: absolute;
+		opacity: 0;
+	height: 100%;
+	width: 100%;
 	/*line-height: 408px;*/
+	
+
+}
+.maincontent{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	margin: auto auto;
+	padding-top: 15px;
+	width: 100%;
+	height: 485px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 30px;
 }
 #product,#why{
-	padding: 30px 20px 0 20px;
+	font-size: 20px;
+	padding: 20px 20px 0 20px;
+
 }
 #why{
-	font-size: 0.8em;
+	max-width: 400px;
+	margin:0 auto;
+}
+.color{
+	color:#000;
 }
 .white-border{
 	display: none;
@@ -424,6 +454,9 @@ td:hover{
 	form>p{
 	font-size: 1.2em;
 	padding: 25% 0 0;
+	}
+	#why{
+		font-size: 16px;
 	}
 }
 @media screen and (min-width:500px){
