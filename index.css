@@ -32,6 +32,7 @@ html,body{
 	height: 100%;
 	width: 100%;
 	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	-webkit-animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
 	-moz-animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
 	-ms-animation: color_change 4s infinite cubic-bezier(0, 1, 0, 1);
@@ -126,6 +127,7 @@ html,body{
 	height: 100%;
 	padding: 50px;
 	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 @keyframes index_bg_change{
 	0%{
@@ -174,6 +176,7 @@ html,body{
 	
 	font-size: 1.2em;
 	perspective-origin: 50% 50%;
+	-webkit-perspective-origin: 50% 50%;
 	transform: rotateY(0deg);
 	-webkit-animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
 	-moz-animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
@@ -211,6 +214,7 @@ html,body{
 }
 .dog>img{
 	perspective-origin: 50% 50%;
+	-webkit-perspective-origin: 50% 50%;
 	transform: rotateY(0deg);
 	-webkit-animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
 	-moz-animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
@@ -218,6 +222,9 @@ html,body{
 	-o-animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
 	animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:hidden; 	/* Firefox */
+	-ms-backface-visibility:hidden; 	/* Internet Explorer */
 	
 	
 }
@@ -225,30 +232,37 @@ html,body{
 @keyframes dog_change{
 	0%{
 		transform: rotateY(0deg);
+		-webkit-transform: rotateY(0deg);
+
 	}
 	50%{
 		transform: rotateY(180deg);
+		-webkit-transform:rotateY(180deg);
 	}
 	100%{
 		transform: rotateY(360deg);
+		-webkit-transform:rotateY(180deg);
 	}
 }
 
 @-webkit-keyframes dog_change{
 	0%{
 		transform: rotateY(0deg);
+		-webkit-transform: rotateY(0deg);
 	}
 	50%{
 		transform: rotateY(180deg);
+		-webkit-transform:rotateY(180deg);
 	}
 	100%{
 		transform: rotateY(360deg);
+		-webkit-transform:rotateY(180deg);
 	}
 }
 
 @media screen and (min-width:900px){
 	.index{
-		padding: 10%;
+		padding: 5%;
 	}
 	.index>p{
 	text-align: center;
@@ -275,13 +289,16 @@ html,body{
 }
 .cat_word{
 	perspective-origin: 50% 50%;
+	-webkit-perspective-origin: 50% 50%;
 	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
 	-webkit-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
 	-moz-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
 	-ms-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
 	-o-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
 	animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 .cat_word>span:nth-child(7)
 {
@@ -300,35 +317,44 @@ html,body{
 
 .cat>img{
 	perspective-origin: 50% 50%;
+	-webkit-perspective-origin: 50% 50%;
 	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
 	-webkit-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
 	-moz-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
 	-ms-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
 	-o-animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
 	animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 
 }
 @keyframes cat_change{
 	0%{
 		transform: rotateY(-180deg);
+		-webkit-transform: rotateY(180deg);
 	}
 	50%{
 		transform: rotateY(0deg);
+		-webkit-transform: rotateY(0deg);
 	}
 	100%{
 		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
 	}
 }
 @-webkit-keyframes cat_change{
 	0%{
 		transform: rotateY(-180deg);
+		-webkit-transform: rotateY(180deg);
 	}
 	50%{
 		transform: rotateY(0deg);
+		-webkit-transform: rotateY(0deg);
 	}
 	100%{
 		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
 	}
 }
 /*主页 摁钮*/
@@ -373,7 +399,6 @@ button{
 	height: 80%;
 	top:15%;
 	width: 80%;
-
 	border-radius: 5px;
 	border: 1px solid #fff;
 	margin:  0 auto;
@@ -532,6 +557,7 @@ td:hover{
 	display: none;
 	z-index: 1;
 	transform: scale(1);
+	-webkit-transform: scale(1);
 	position: absolute;
 	height: 80%;
 	margin:0 auto;
