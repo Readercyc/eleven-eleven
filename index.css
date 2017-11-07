@@ -184,7 +184,9 @@ html,body{
 	-o-animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
 	animation: dog_change 4s cubic-bezier(0,1,0,1) infinite;
 	backface-visibility: hidden;
-	-
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden; 	/* Firefox */
+	-ms-backface-visibility:hidden; 	/* Internet Explorer */
 }
 .dog_word>span{
 	color:#fff;
@@ -300,6 +302,8 @@ html,body{
 	animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
 	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:hidden; 	/* Firefox */
+	-ms-backface-visibility:hidden; 	/* Internet Explorer */
 }
 .cat_word>span:nth-child(7)
 {
@@ -328,6 +332,8 @@ html,body{
 	animation: cat_change 4s cubic-bezier(0,1,0,1) infinite;
 	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:hidden; 	/* Firefox */
+	-ms-backface-visibility:hidden; 	/* Internet Explorer */
 
 }
 @keyframes cat_change{
